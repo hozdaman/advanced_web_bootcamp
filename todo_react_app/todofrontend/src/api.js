@@ -54,7 +54,7 @@ export async function removeTodo(id){
 			method: 'delete',	
 		})
 
-			//error handling
+			//error handling 
 			.then(resp => {
 				if(!resp.ok) {
 					if(resp.status >= 400 && resp.status < 500) {
